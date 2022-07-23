@@ -1,0 +1,313 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mulish', sans-serif;
+}
+.container{
+    width: 100%;
+    
+}
+.header{
+    width: 100%;
+    height: 80px;
+    background-color: rgb(46, 46, 46) ;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    
+}
+.logo-header{
+    width: 200px ;
+    height: 49px;
+    padding-right: 20px;   
+}
+.logo-header img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.nav{
+    color: white;
+    display: flex;
+    align-items: center;
+    font-weight: 800;
+    gap: 20px;
+}
+.nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: 800;
+}
+.select p{
+    position: relative;
+    cursor: pointer;
+}
+.select-2{
+    position: relative;
+    cursor: pointer;
+}
+.select-3{
+    position: relative;
+    cursor: pointer;
+}
+.list-introduction{
+   position: absolute;
+   top: 8;
+   left: 10;
+   margin-top: 20px;
+   width: 200px;
+   padding:  10px 0;
+   list-style: none;
+   background-color: #000000;
+   border: 1px solid #63626283;
+   cursor: pointer;
+   z-index: 10;
+   visibility: hidden;
+   opacity: 0;
+   transition: all linear 0.2s;  
+} 
+.list-product{
+   position: absolute;
+   top: 8;
+   left: 10;
+   margin-top: 20px;
+   width: 200px;
+   padding:  10px 0;
+   list-style: none;
+   background-color: #000000;
+   border: 1px solid #63626283;
+   cursor: pointer;
+   z-index: 10;
+   visibility: hidden;
+   opacity: 0;
+   transition: all linear 0.2s;  
+} 
+.list-news{
+   position: absolute;
+   top: 8;
+   left: 10;
+   margin-top: 20px;
+   width: 150px;
+   padding:  10px 0;
+   list-style: none;
+   background-color: #000000;
+   border: 1px solid #63626283;
+   cursor: pointer;
+   z-index: 10;
+   visibility: hidden;
+   opacity: 0;
+   transition: all linear 0.2s;  
+} 
+.list-introduction .list-product .list-news li{
+    line-height: 30px;
+    padding: 0 10px;
+    color: black;
+}
+.list-introduction li:hover{
+    background-color: #4f5761;
+    color: #ffffff;
+}
+.select:hover .list-introduction {
+   visibility: visible;
+   opacity: 1;
+   transition: all linear 0.2s;
+}
+.list-news li:hover{
+    background-color: #4f5761;
+    color: #ffffff;
+}
+.select-3:hover .list-news {
+   visibility: visible;
+   opacity: 1;
+   transition: all linear 0.2s;
+}
+.list-product li:hover{
+    background-color: #4f5761;
+    color: #ffffff;
+}
+.select-2:hover .list-product {
+   visibility: visible;
+   opacity: 1;
+   transition: all linear 0.2s;
+}
+.search{
+    font-size: 1.5rem;
+    color: white;
+    display: none;
+}
+.middle{
+    width: 100%;
+    
+}
+.featured-products{
+    font-size: 36px;
+    text-align: center;
+  
+}
+
+.logo-featured{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.toco{
+    color: #d3b673;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+}
+.milk-price{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    
+}
+.milk-tea{
+    width: calc(25% - 30px);
+    margin: 0 15px;
+    margin-bottom: 32px;
+    
+}
+.img-milk-tea img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.list-milk-tea > p{
+    font-weight: 700;
+    text-align: center;
+    padding-bottom: 10px;
+}
+.list-milk-tea{
+    background-color: #f5f5f5;
+}
+.price{
+    font-weight: 700;
+    text-align: center;
+    padding-bottom: 10px;
+    color: #d3b673;
+    font-size: 15px;
+}
+
+.order {
+    color: white;
+    background-color: #d3b673;
+    cursor: pointer;
+    text-align: center;
+    opacity: 0.8;
+}
+.order:hover{
+    color: #d3b673;
+    background-color: #ffffffcc;
+    opacity: 1;
+}
+.more-watch-all{
+    
+    background-color: #d3b673;
+    width: 130px;
+    height: 40px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.watch-all{
+    display: flex;
+    justify-content: center;
+    padding: 50px 0 60px 0;
+    font-size: 16px;
+}
+.about-us{
+    width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative; 
+    margin: 0 152px;
+}
+.img-about-us img{
+    object-fit: cover;
+    width: 100%;
+    
+}
+.text-1{
+    color: #d3b673;
+    font-size: 25px;
+    margin-bottom: 5px;
+    font-weight: 700;
+    text-align: center;
+}
+.text-2{
+    font-size: 40px;
+    text-align: center;
+    color: black;
+    font-family: 'Baloo Thambi 2', cursive;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 0 50px;
+}
+.icon-bottom-title{
+    width: 315px;
+    height: 30px;
+    padding-right: 100px;
+}
+.description{
+    text-align: center;
+    margin: 16px 0;
+    color: #000000;
+}
+.home-about-us{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 40px;
+    z-index: 2;
+    position: absolute;
+    width: 35%;
+}
+.btn-view-all{
+    border: 1px solid #d3b673;
+    color: #ffffff;
+    background-color: #d3b673;
+    padding: 8px 16px;
+    cursor: pointer;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    display: inline-block;
+}
+.franchise-container{
+    width: 75%;
+    display: flex;
+    border: 6px solid #d3b673;
+    margin: 50px 0 152px 152px;
+}
+.home-franchise-title{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10%;
+}
+.select-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.home-franchise-img{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+.icon-bottom-title-2{
+    text-align: center;
+}
+
+
