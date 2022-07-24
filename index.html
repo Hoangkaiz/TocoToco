@@ -5,13 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
     <title>TocoToco</title>
 </head>
 
@@ -24,26 +28,26 @@
             <div class="nav">
                 <a href="#">TRANG CHỦ</a>
                 <div class="select">
-                    <div class="introduction">
+                    <div class="links">
                         <p>GIỚI THIỆU</p>
-                        <ul class="list-introduction">
+                        <ul class="list-link">
                             <li>LỊCH SỬ VÀ SỨ MỆNH</li>
                             <li>THÀNH TỰU ĐẠT ĐƯỢC</li>
                         </ul>
                     </div>
                 </div>
-                <div class="select-2">
-                    <div class="product">
+                <div class="select">
+                    <div class="links">
                         <p>SẢN PHẨM</p>
-                        <ul class="list-product">
+                        <ul class="list-link">
                             <li>INSTANT MILK TEA</li>
                         </ul>
                     </div>
                 </div>
-                <div class="select-3">
-                    <div class="news">
+                <div class="select">
+                    <div class="links">
                         <p>TIN TỨC</p>
-                        <ul class="list-news">
+                        <ul class="list-link">
                             <li>TIN TỨC KHUYẾN MẠI</li>
                             <li>CÂU CHUYỆN CỬA HÀNG</li>
                             <li>SỰ KIỆN</li>
@@ -54,7 +58,9 @@
                 <a href="#">TUYỂN DỤNG</a>
                 <a href="#">NHƯỢNG QUYỀN</a>
             </div>
-            <div class="search"><i class="fa-solid fa-magnifying-glass"></i></div>
+
+            <div class="search icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+            <div class="bars icon"><i class="fa-solid fa-bars"></i></div>
         </div>
         <div class="middle">
             <div class="featured-products">
@@ -69,29 +75,15 @@
                     <div class="img-milk-tea">
                         <img src="./img/tra sua img.jpg" alt="">
                     </div>
-                    <div class="list-milk-tea">
-                        <p>Ô Long Xoài Kem Cà Phê</p>
-                        <div class="price">
-                            <p>49.000đ</p>
-                        </div>
-
-
-                        <div class="order">
-                            <p>ĐẶT HÀNG</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="milk-tea">
-                    <div class="img-milk-tea">
-                        <img src="./img/tra sua img.jpg" alt="">
-                    </div>
-                    <div class="list-milk-tea">
-                        <p>Ô Long Xoài Kem Cà Phê</p>
-                        <div class="price">
-                            <p>49.000đ</p>
-                        </div>
-                        <div class="order">
-                            <p>ĐẶT HÀNG</p>
+                    <div class="description-milk-tea">
+                        <div class="list-milk-tea">
+                            <p>Ô Long Xoài Kem Cà Phê</p>
+                            <div class="price">
+                                <p>49.000đ</p>
+                            </div>
+                            <div class="order">
+                                <p>ĐẶT HÀNG</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -99,6 +91,57 @@
                     <div class="img-milk-tea">
                         <img src="./img/tra sua img.jpg" alt="">
                     </div>
+                    <div class="description-milk-tea">
+                        <div class="list-milk-tea">
+                            <p>Ô Long Xoài Kem Cà Phê</p>
+                            <div class="price">
+                                <p>49.000đ</p>
+                            </div>
+                            <div class="order">
+                                <p>ĐẶT HÀNG</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="milk-tea">
+                    <div class="img-milk-tea">
+                        <img src="./img/tra sua img.jpg" alt="">
+                    </div>
+                    <div class="description-milk-tea">
+                        <div class="list-milk-tea">
+                            <p>Ô Long Xoài Kem Cà Phê</p>
+                            <div class="price">
+                                <p>49.000đ</p>
+                            </div>
+                            <div class="order">
+                                <p>ĐẶT HÀNG</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="milk-tea">
+                    <div class="img-milk-tea">
+                        <img src="./img/tra sua img.jpg" alt="">
+                    </div>
+                    <div class="description-milk-tea">
+                        <div class="list-milk-tea">
+                            <p>Ô Long Xoài Kem Cà Phê</p>
+                            <div class="price">
+                                <p>49.000đ</p>
+                            </div>
+                            <div class="order">
+                                <p>ĐẶT HÀNG</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="milk-price">
+            <div class="milk-tea">
+                <div class="img-milk-tea">
+                    <img src="./img/tra sua img.jpg" alt="">
+                </div>
+                <div class="description-milk-tea">
                     <div class="list-milk-tea">
                         <p>Ô Long Xoài Kem Cà Phê</p>
                         <div class="price">
@@ -109,10 +152,41 @@
                         </div>
                     </div>
                 </div>
-                <div class="milk-tea">
-                    <div class="img-milk-tea">
-                        <img src="./img/tra sua img.jpg" alt="">
+            </div><div class="milk-tea">
+                <div class="img-milk-tea">
+                    <img src="./img/tra sua img.jpg" alt="">
+                </div>
+                <div class="description-milk-tea">
+                    <div class="list-milk-tea">
+                        <p>Ô Long Xoài Kem Cà Phê</p>
+                        <div class="price">
+                            <p>49.000đ</p>
+                        </div>
+                        <div class="order">
+                            <p>ĐẶT HÀNG</p>
+                        </div>
                     </div>
+                </div>
+            </div><div class="milk-tea">
+                <div class="img-milk-tea">
+                    <img src="./img/tra sua img.jpg" alt="">
+                </div>
+                <div class="description-milk-tea">
+                    <div class="list-milk-tea">
+                        <p>Ô Long Xoài Kem Cà Phê</p>
+                        <div class="price">
+                            <p>49.000đ</p>
+                        </div>
+                        <div class="order">
+                            <p>ĐẶT HÀNG</p>
+                        </div>
+                    </div>
+                </div>
+            </div><div class="milk-tea">
+                <div class="img-milk-tea">
+                    <img src="./img/tra sua img.jpg" alt="">
+                </div>
+                <div class="description-milk-tea">
                     <div class="list-milk-tea">
                         <p>Ô Long Xoài Kem Cà Phê</p>
                         <div class="price">
@@ -124,65 +198,6 @@
                     </div>
                 </div>
             </div>
-            <div class="milk-price">
-                <div class="milk-tea">
-                    <div class="img-milk-tea">
-                        <img src="./img/tra sua img.jpg" alt="">
-                    </div>
-                    <div class="list-milk-tea">
-                        <p>Ô Long Xoài Kem Cà Phê</p>
-                        <div class="price">
-                            <p>49.000đ</p>
-                        </div>
-
-
-                        <div class="order">
-                            <p>ĐẶT HÀNG</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="milk-tea">
-                    <div class="img-milk-tea">
-                        <img src="./img/tra sua img.jpg" alt="">
-                    </div>
-                    <div class="list-milk-tea">
-                        <p>Ô Long Xoài Kem Cà Phê</p>
-                        <div class="price">
-                            <p>49.000đ</p>
-                        </div>
-                        <div class="order">
-                            <p>ĐẶT HÀNG</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="milk-tea">
-                    <div class="img-milk-tea">
-                        <img src="./img/tra sua img.jpg" alt="">
-                    </div>
-                    <div class="list-milk-tea">
-                        <p>Ô Long Xoài Kem Cà Phê</p>
-                        <div class="price">
-                            <p>49.000đ</p>
-                        </div>
-                        <div class="order">
-                            <p>ĐẶT HÀNG</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="milk-tea">
-                    <div class="img-milk-tea">
-                        <img src="./img/tra sua img.jpg" alt="">
-                    </div>
-                    <div class="list-milk-tea">
-                        <p>Ô Long Xoài Kem Cà Phê</p>
-                        <div class="price">
-                            <p>49.000đ</p>
-                        </div>
-                        <div class="order">
-                            <p>ĐẶT HÀNG</p>
-                        </div>
-                    </div>
-                </div>
             </div>
             <div class="watch-all">
                 <div class="more-watch-all">
@@ -229,7 +244,7 @@
                     </div>
                     <div class="btn-view-all">Xem thêm</div>
                 </div>
-                <div class="home-fanchise-img">
+                <div class="home-franchise-img">
                     <img src="./img/img_home_franchise right.png" alt="">
                 </div>
             </div>

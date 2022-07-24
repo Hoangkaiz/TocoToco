@@ -14,13 +14,14 @@
     background-color: rgb(46, 46, 46) ;
     display: flex;
     align-items: center;
-    justify-content: center;    
+    justify-content: center;   
+    gap: 20px;
+    padding: 0 40px; 
     
 }
 .logo-header{
     width: 200px ;
-    height: 49px;
-    padding-right: 20px;   
+    height: 49px;  
 }
 .logo-header img{
     object-fit: cover;
@@ -33,31 +34,24 @@
     align-items: center;
     font-weight: 800;
     gap: 20px;
+    flex-wrap: wrap;
+    flex: 1;
 }
 .nav a {
     text-decoration: none;
     color: white;
     font-weight: 800;
 }
-.select p{
+.select {
     position: relative;
     cursor: pointer;
 }
-.select-2{
-    position: relative;
-    cursor: pointer;
-}
-.select-3{
-    position: relative;
-    cursor: pointer;
-}
-.list-introduction{
+.list-link{
    position: absolute;
-   top: 8;
-   left: 10;
+   top: 10px;
+   left: 10px;
    margin-top: 20px;
-   width: 200px;
-   padding:  10px 0;
+   width: fit-content;
    list-style: none;
    background-color: #000000;
    border: 1px solid #63626283;
@@ -66,74 +60,44 @@
    visibility: hidden;
    opacity: 0;
    transition: all linear 0.2s;  
+}
+.list-link::after{
+    width: 0;
+    height: 0;
+    border-width: 10px;
+    border-color: transparent transparent rgb(0, 0, 0) transparent ;
+    border-style: solid;
+    content:"" ;
+    position: absolute;
+    top: -20px;
 } 
-.list-product{
-   position: absolute;
-   top: 8;
-   left: 10;
-   margin-top: 20px;
-   width: 200px;
-   padding:  10px 0;
-   list-style: none;
-   background-color: #000000;
-   border: 1px solid #63626283;
-   cursor: pointer;
-   z-index: 10;
-   visibility: hidden;
-   opacity: 0;
-   transition: all linear 0.2s;  
-} 
-.list-news{
-   position: absolute;
-   top: 8;
-   left: 10;
-   margin-top: 20px;
-   width: 150px;
-   padding:  10px 0;
-   list-style: none;
-   background-color: #000000;
-   border: 1px solid #63626283;
-   cursor: pointer;
-   z-index: 10;
-   visibility: hidden;
-   opacity: 0;
-   transition: all linear 0.2s;  
-} 
-.list-introduction .list-product .list-news li{
+
+.list-link  li {
+    white-space: nowrap;
+    width: 100%;
     line-height: 30px;
-    padding: 0 10px;
-    color: black;
+    padding: 5px 10px;
+    color: rgb(255, 255, 255);
 }
-.list-introduction li:hover{
+.list-link li:hover{
     background-color: #4f5761;
     color: #ffffff;
 }
-.select:hover .list-introduction {
+.select:hover .list-link {
    visibility: visible;
    opacity: 1;
    transition: all linear 0.2s;
 }
-.list-news li:hover{
+.list-link li:hover{
     background-color: #4f5761;
     color: #ffffff;
 }
-.select-3:hover .list-news {
-   visibility: visible;
-   opacity: 1;
-   transition: all linear 0.2s;
-}
-.list-product li:hover{
-    background-color: #4f5761;
-    color: #ffffff;
-}
-.select-2:hover .list-product {
-   visibility: visible;
-   opacity: 1;
-   transition: all linear 0.2s;
-}
-.search{
-    font-size: 1.5rem;
+/* css icon */
+.icon{
+    font-size: 1.1rem;
     color: white;
+}
+.bars{
     display: none;
 }
 .middle{
@@ -162,21 +126,45 @@
     padding-top: 50px;
 }
 .milk-price{
+    width: 80%;
     display: flex;
     flex-wrap: wrap;
+    margin: 0 auto;
     margin-top: 50px;
     
 }
 .milk-tea{
     width: calc(25% - 30px);
+    height: 350px;
     margin: 0 15px;
     margin-bottom: 32px;
     
 }
+.milk-tea:hover img{
+    transform: scale(1.2);
+    transition: all ease-in-out 0.2s;
+
+}
+.milk-tea:hover .list-milk-tea{
+    margin: 0;
+}
+
 .img-milk-tea img {
     object-fit: cover;
     width: 100%;
     height: 100%;
+    transition: all ease-in-out 0.2s;
+}
+.img-milk-tea{
+    width: 100%;
+    height: 70%;
+    overflow: hidden;
+}
+.description-milk-tea{
+    width: 100%;
+    height: 30%;
+    overflow: hidden;
+
 }
 .list-milk-tea > p{
     font-weight: 700;
@@ -184,8 +172,12 @@
     padding-bottom: 10px;
 }
 .list-milk-tea{
-    background-color: #f5f5f5;
+    background-color: #e9d9d9 ;
+    margin-top: 40px;
+    padding: 10px 0;
+    transition: all ease-in-out 0.2s;
 }
+
 .price{
     font-weight: 700;
     text-align: center;
@@ -195,12 +187,17 @@
 }
 
 .order {
+    width:fit-content;
     color: white;
     background-color: #d3b673;
     cursor: pointer;
     text-align: center;
     opacity: 0.8;
+    padding:5px 10px ;
+    margin: 0 auto;
+
 }
+
 .order:hover{
     color: #d3b673;
     background-color: #ffffffcc;
@@ -225,13 +222,19 @@
 }
 .about-us{
     width: 75%;
+    height: 70vh;
     display: flex;
     align-items: center;
     justify-content: flex-end;
     position: relative; 
-    margin: 0 152px;
+    margin: 0 auto;
+}
+.img-about-us{
+    width: 100%;
+    height: 100%;
 }
 .img-about-us img{
+    height: 100%;
     object-fit: cover;
     width: 100%;
     
@@ -269,7 +272,7 @@
     margin-right: 40px;
     z-index: 2;
     position: absolute;
-    width: 35%;
+    width: 50%;
 }
 .btn-view-all{
     border: 1px solid #d3b673;
@@ -285,16 +288,20 @@
 .franchise-container{
     width: 75%;
     display: flex;
+    justify-content: center;
+    align-items: center;
     border: 6px solid #d3b673;
-    margin: 50px 0 152px 152px;
+    margin: 50px auto;
+    padding: 20px;
 }
 .home-franchise-title{
-    width: 50%;
+    
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 0 10%;
+    padding: 0 20px;
+    flex: 1;
 }
 .select-title{
     display: flex;
@@ -302,9 +309,16 @@
     align-items: center;
 }
 .home-franchise-img{
-    width: 50%;
+    
     display: flex;
     justify-content: center;
+    flex: 1;
+}
+.home-franchise-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
 }
 .icon-bottom-title-2{
     text-align: center;
